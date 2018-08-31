@@ -2,6 +2,7 @@
   <v-footer
     dark
     height="auto"
+    fixed
   >
     <v-card
       class="flex"
@@ -33,7 +34,6 @@
 
 <script>
   export default {
-    name: 'footer',
     data: () => ({
       icons: [
         'fab fa-facebook',

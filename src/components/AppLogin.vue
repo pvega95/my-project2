@@ -1,6 +1,16 @@
 <template>
-<v-container>
- <v-form v-model="valid">
+<v-container >
+
+<v-layout justify-center>
+  <v-flex xs5>
+    <div>
+      <img src="../images/ScotiabankLogo.png">
+    </div>  
+  </v-flex>
+</v-layout>
+<v-layout justify-center>
+<v-flex xs5>
+<v-form v-model="valid" lazy-validation>
     <v-text-field
       v-model="name"
       :rules="nameRules"
@@ -15,6 +25,11 @@
       required
     ></v-text-field>
   </v-form>
+</v-flex>
+</v-layout>
+ 
+  <v-btn color="green" type="submit">Sign Up</v-btn>
+  
 </v-container>
  
 </template>
